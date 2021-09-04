@@ -9,37 +9,22 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: grey;
-    background-image: url("anime-scenery-09.jpg");
-    background-attachment: fixed;
 }
 
-address
-{
-    background-color: grey;
-    border-style: solid;
-    border-bottom-style: hidden;
-    border-right: hidden;
-    border-left: hidden;
-    border-color: silver;
-}
 
-.h\&f, .header1 /* Header and footer */
+
+footer, .header1 /* Header and footer */
 {
     color: white;
     border-color: silver;
-    background-image: url("pc2.jpg");
-    background-repeat: no-repeat;
     background-size: 100%;
     background-color:rgb(48, 61, 39);
     padding: 20px 20px;
-    /* border-bottom-style: solid; */
-    border-top-style: solid;
-    height: 100px;
 }
 
-#foot
-{
-    border-color: black;
+.header1 {
+    border-bottom-style: solid;
+    height: 150px;
 }
 
 nav {
@@ -51,8 +36,7 @@ li {
     display:inline;
     margin-right: 15px;
     margin-left: 15px;
-    font-size: 20px;
-   text-align: right;
+    font-size: 25px;
 }
 
 .navagation {
@@ -66,7 +50,6 @@ a:visited {
 #pug {
     width: 150px;
     height: 100px;
-    
 }
 
 .generalNav {
@@ -75,4 +58,21 @@ a:visited {
     padding-right: 15px;
     padding-bottom: 15px;
     font-size: 20px;
+}
+
+footer {
+    position: fixed;
+    Width: 100%;
+    bottom: 0;
+    border-top-style: solid;
+    height: 150px;
+}
+
+main p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+main {
+    padding-top: 50px;
 }
