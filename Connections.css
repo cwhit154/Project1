@@ -68,15 +68,35 @@ footer {
     height: 150px;
 }
 
-main p {
+main p, section a {
     font-size: 20px;
     padding: 10px;
 }
 
 main {
     padding-top: 50px;
+    margin: auto;
+    width: 60%;
 }
 
 a:link {
     text-decoration: none;
   }
+
+#section1 {
+    padding-top: 150px;
+    clear: right;
+}
+
+#section2 {
+    padding-top: 30px;
+}
+
+#park {
+    float: right;
+    width: 600px;
+}
+
+main a {
+    line-height: 3;
+}
