@@ -1,0 +1,100 @@
+/* Css for the home page */
+html, body, h1, ul, li, a, p, footer, header, main, nav {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey;
+}
+
+
+
+footer, .header1 /* Header and footer */
+{
+    color: white;
+    border-color: silver;
+    background-size: 100%;
+    background-color:rgb(48, 61, 39);
+    padding: 20px 20px;
+}
+
+.header1 {
+    border-bottom-style: solid;
+    height: 150px;
+}
+
+nav {
+padding: 5px;
+background-color:rgb(48, 61, 39);
+}
+
+li {
+    display:inline;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.navagation {
+    text-align: right; 
+}
+
+a:visited {
+    color: gainsboro;
+}
+
+#pug {
+    width: 150px;
+    height: 100px;
+}
+
+.generalNav {
+    background-color:rgb(48, 61, 39);  
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+footer {
+    position: fixed;
+    Width: 100%;
+    bottom: 0;
+    border-top-style: solid;
+    height: 150px;
+}
+
+main p, section a {
+    font-size: 20px;
+    padding: 10px;
+}
+
+main {
+    padding-top: 50px;
+    margin: auto;
+    width: 60%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+label{
+    font-size: 30px;
+    display: inline-block; 
+    width: 150px;
+    height: 50px;
+}
+
+input[type=text], input[type=date], #eventDetails {
+    width: 40%;
+    height: 30px;
+  }
+
+#eventDetails {
+    height: 75px;
+}
