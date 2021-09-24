@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>All Students</title>
+
+</head>
+
+<body>
+    <% if(studentArry.length === 0) {%>
+        <h1>Students</h1>
+        <p>There is no students to display</p>
+       <% } else {%>
+        <h1>Students</h1>
+        <ul>
+        <% studentArry.forEach((student) => { %> 
+            <li><%= student.name%></li>
+        <% } ) %>
+        </ul>
+        <% } %>
+
+</body>
+
+</html>
+

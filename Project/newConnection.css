@@ -98,3 +98,9 @@ input[type=text], input[type=date], #eventDetails {
 #eventDetails {
     height: 75px;
 }
+
+#submit {
+    width: 150px;
+    height: 50px;
+    margin-left: 41%;
+}
