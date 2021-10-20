@@ -1,0 +1,34 @@
+<%- include('../partials/header.ejs')%>
+    <main>
+        <form method="POST" action="/connections/<%=connection.connection_id%>?_method=PUT"> 
+            <label for="title">Connection Name:</label>
+            <input type="text" id="title" name="connection_name" value="<%= connection.connection_name %>"><br><br>
+
+            <label for="Host">Host:</label>
+            <input type="text" id="Host" name="host_name" value="<%= connection.host_name %>"><br><br>
+
+            <label for="When">When:</label>
+            <input type="date" id="When" name="date" value="<%= connection.date %>"><br><br>
+
+            <label for="location">Located:</label>
+            <input type="text" id="location" name="location" value="<%= connection.location %>"><br><br>
+
+            <label for="Start">Start:</label>
+            <input type="time" id="Start" name="start_time" value="<%= connection.start_time %>"><br><br>
+
+            <label for="End">End:</label>
+            <input type="time" id="End" name="end_time" value="<%= connection.end_time %>"><br><br>
+
+            <label for="Event">Topic:</label>
+            <input type="text" id="Event" name="connection_topic" value="<%= connection.connection_topic %>"><br><br>
+
+            <label for="eventDetails">Details:</label>
+            <textarea  id="eventDetails" name="details" ><%= connection.details %></textarea><br><br>
+
+            <label for="imgage">Image URL:</label>
+            <input type="text" id="imgage" name="image" value="<%= connection.image %>"><br><br><br>
+
+            <input type="submit" value="Submit" id="submit">
+        </form> 
+    </main>
+<%- include('../partials/footer.ejs')%>

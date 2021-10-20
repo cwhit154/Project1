@@ -1,0 +1,46 @@
+<%- include('../partials/header.ejs')%>
+    <main>
+        <!-- Info -->
+        <section id="info">
+            <aside>
+                <form>
+                    <button type="submit" formmethod = "GET" formaction ="/connections/<%= connection.connection_id %>/edit">Edit</button>
+                    <button type="submit" formmethod = "POST" formaction ="/connections/<%= connection.connection_id %>?_method=Delete">Delete</button>
+                </form>
+            </aside>
+            <table>
+                <tr>
+                    <td> <h1><%= connection.connection_name %> </h1></td>
+                </tr>
+                <tr>
+                    <td> <p>Hosted By:  <%= connection.host_name %></p></td>
+                    
+                </tr>
+                <tr>
+                    <td> <p>When: <%= connection.date %></p> </td>
+                </tr>
+                <tr>
+                    <td> <p>Located at: <%= connection.location %> </p></td>
+                </tr>
+                <tr>
+                    <td> <p>From: <%= connection.start_time %> - <%= connection.end_time %></p></td>
+                </tr>
+                <tr>
+                    <td> <h1>Details</h1> </td>
+                </tr>
+                <tr>
+                    <td> <p> <%= connection.details %> </p> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+        <!-- Details -->
+        <section id="details">
+            
+            
+        </section>
+        <img src="<%= connection.image %>" alt="picture of event" id="barkparklogo">
+    </main>
+<%- include('../partials/footer.ejs')%>

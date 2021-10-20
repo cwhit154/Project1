@@ -1,0 +1,34 @@
+<%- include('../partials/header.ejs')%>
+<main>
+    <form action = '/connections' method="POST"> 
+        <label for="title">Connection Name:</label>
+        <input type="text" id="title" name="connection_name" placeholder="Title of the event or Name of venue"><br><br>
+
+        <label for="Host">Host:</label>
+        <input type="text" id="Host" name="host_name" placeholder="Your Name"><br><br>
+
+        <label for="When">When:</label>
+        <input type="date" id="When" name="date" value=""><br><br>
+
+        <label for="location">Located:</label>
+        <input type="text" id="location" name="location" placeholder="Address"><br><br>
+
+        <label for="Start">Start:</label>
+        <input type="time" id="Start" name="start_time" value=""><br><br>
+
+        <label for="End">End:</label>
+        <input type="time" id="End" name="end_time" value=""><br><br>
+
+        <label for="Event">Topic:</label>
+        <input type="text" id="Event" name="connection_topic"  placeholder="topic"><br><br>
+
+        <label for="eventDetails">Details:</label>
+        <textarea  id="eventDetails" name="details" placeholder="Details" ></textarea><br><br>
+
+        <label for="imgage">Image URL:</label>
+        <input type="text" id="imgage" name="image" placeholder="Image URL to be used"><br><br><br>
+
+        <input type="submit" value="Submit" id="submit">
+    </form> 
+</main>
+<%- include('../partials/footer.ejs')%>

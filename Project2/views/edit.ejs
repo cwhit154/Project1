@@ -1,0 +1,36 @@
+<%- include('../partials/header.ejs')%>
+    <main>
+        <form action="newConnection.ejs"> 
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" placeholder="Title of the event or Name of venue"><br><br>
+
+            <label for="Host">Host:</label>
+            <input type="text" id="Host" name="Host" placeholder="Your Name"><br><br>
+
+            <label for="When">When:</label>
+            <input type="date" id="When" name="When"><br><br>
+
+            <label for="location">Located:</label>
+            <input type="text" id="location" name="location" placeholder="Address"><br><br>
+
+            <label for="Start">Start:</label>
+            <input type="time" id="Start" name="Start" value="00:00"><br><br>
+
+            <label for="End">End:</label>
+            <input type="time" id="End" name="End" value="12:00"><br><br>
+
+            <label for="Event">Event:</label>
+            <input type="text" id="Event" name="Event" placeholder="Title of Details Section"><br><br>
+
+            <label for="eventDetails">Details:</label>
+            <!-- <input type="text" id="eventDetails" name="eventDetails" placeholder="Details"><br><br> -->
+            <textarea placeholder="Details" id="eventDetails" name="eventDetails"></textarea><br><br>
+
+            <label for="imgage">Image URL:</label>
+            <input type="text" id="imgage" name="imgage" placeholder="Image used"><br><br><br>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+        <h1>This is th edits page</h1>
+    </main>
+<%- include('../partials/footer.ejs')%>

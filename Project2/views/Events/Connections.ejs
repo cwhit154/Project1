@@ -1,0 +1,24 @@
+<%- include('../partials/header.ejs')%>
+    <main>
+        <%if(connections.length) { %>
+            <% const topic = [] %>
+            <% const connectionsStored = [] %>
+            <% let currentTopic = "" %>
+            <% connections.forEach(connection=>{ %>
+                <% if(topic.includes(connection.connection_topic)){ %>
+                    <!-- Do nothing if it does include the topic -->
+                <% } else{ 
+                    topic.push(connection.connection_topic);
+                    currentTopic = connection.connection_topic; %>
+                    <h1> <%=connection.connection_topic%> </h1>
+                    <% connections.forEach(connection=>{ %>
+                    <% if(connection.connection_topic === currentTopic){ %>
+                       <div id="connectionsSpace"> <a href = "/connections/<%= connection.connection_id %>"> <%=connection.connection_name%><br> </a> </div> 
+                    <% }}) %>
+                    <% }; %>
+            <% });
+        } else {%>
+            <P>There are no Connections to display</P>
+       <% }%>
+    </main>
+<%- include('../partials/footer.ejs')%>
